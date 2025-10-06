@@ -1,5 +1,94 @@
-/* Simple custom styles */
-body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
-.hero { background: linear-gradient(90deg, #0d6efd 0%, #6f42c1 100%); padding: 80px 0; }
-.navbar-brand { font-weight: 700; }
-.container { max-width: 980px; }
+/* Gaya umum */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Bagian header hero */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-image: url('assets/img/bg.jpg'); /* Ganti bg.jpg dengan nama file gambar kamu */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-section .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ffcc00;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff9900;
+}
+
+/* Bagian konten utama */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.bg-light {
+  background: #f8f8f8;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
